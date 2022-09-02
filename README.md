@@ -1,4 +1,4 @@
-*I tried to make it relatively simple. Many additional things, which we can discuss further, can be done.*
+*I tried to make it relatively simple. Many additional things, which we can discuss further, can be done. I also forgot pagination, but realized it late."
 
 Steps to run the project:
 
