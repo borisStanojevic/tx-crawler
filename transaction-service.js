@@ -4,10 +4,8 @@ const dateService = require("./date-service.js");
 const pricingService = require("./pricing-service.js");
 const etherscanService = require("./etherscan-service.js");
 
-const INFURA_API_KEY = "a762641c593049e1a1b9d71339f23a84";
-
 const provider = new ethers.providers.JsonRpcBatchProvider(
-	`https://mainnet.infura.io/v3/${INFURA_API_KEY}`
+	`https://mainnet.infura.io/v3/${process.env.INFURA_API_KEY}`
 );
 
 async function getTransactionListByAddress(address, startBlock) {
