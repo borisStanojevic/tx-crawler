@@ -1,0 +1,19 @@
+version: '3.7'
+
+services:
+
+  redis:
+    image: 'redis:alpine'
+    ports:
+      - '6379:6379'
+
+  tx-crawler:
+    build: .
+    ports:
+      - "3000:3000"
+    environment:
+      - PORT=3000
+      - REDIS_HOST=redis
+      - REDIS_PORT=6379
+    depends_on:
+      - redis
