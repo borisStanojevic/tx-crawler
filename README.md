@@ -1,5 +1,3 @@
-*I tried to make it relatively simple. Many additional things, which we can discuss further, can be done. I also forgot pagination, but realized it late.*
-
 Steps to run the project:
 
 - Provide your own Infura & Etherscan API keys in docker-compose file
